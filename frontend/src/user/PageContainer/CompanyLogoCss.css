@@ -1,0 +1,28 @@
+.company-logo-container{
+    margin-top: 1rem;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.companu-logo-row{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.companu-logo-row img{
+        height: 90px;
+        width: auto;
+        margin-left: 25px;
+}

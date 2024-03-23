@@ -1,0 +1,94 @@
+
+.outer-player{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    max-height: 100%; /* Set a maximum height for scrolling */
+    gap: 1%;
+    /* padding: 10px; */
+}
+.player-component{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Change height to auto */
+    width: 30%;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    border: 5px solid black;
+    max-height: calc(100% - 20px); /* Set max-height minus the border and padding */
+    padding: 10px; /* Add padding to ensure content doesn't touch the border */
+
+}
+
+.extra{
+    width: 65%;
+    height: 100%;
+    background-color: rgb(73, 72, 72);
+    border-radius: 20px;
+    /* border: 5px solid black; */
+}
+
+.player-card1{
+    /* height: calc(100% / var(--num-elements));; */
+    height: 25%;
+    width: 80%;
+    background-color: rgb(158, 155, 155);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.player-card1-complite{
+    /* height: calc(100% / var(--num-elements));; */
+    height: 25%;
+    width: 80%;
+    background-color: rgb(133, 244, 125);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    cursor: pointer;
+}
+
+.player-url{
+    text-align: center;
+    text-align: center;
+    
+    /* overflow-y:hidden ; */
+}
+
+.player-index{
+    font-size: 1rem;
+}
+
+.play-Video {
+    width: 100%; 
+    height: 100%;
+   
+}
+.play-Video iframe{
+    
+    width: 100%; 
+     height: 100%;
+     border-radius: 20px;
+    /* background-color: aqua; */
+}
+

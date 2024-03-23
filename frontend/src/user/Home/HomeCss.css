@@ -1,0 +1,35 @@
+.main-home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-page{
+
+    margin-top: 75vh;
+}
+
+.company-img{
+    margin-top: 1rem;
+}
+
+.coursehome-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.coursehome-style h3{
+        text-align: center;
+        color: rgb(107, 199, 199);
+        font-size: 1.6rem;
+}
+
+.coursehome-style h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
