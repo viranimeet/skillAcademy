@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 
+//  basically how use to see chart how many courses sell
 const BarChart = ({ chartData }) => {
   const chartRef = useRef(null);
 
