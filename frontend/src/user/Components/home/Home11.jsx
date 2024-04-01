@@ -1,31 +1,30 @@
-// import React from 'react'
-// import Hero from './hero/Hero'
 
-// const Home11 = () => {
-//   return (
-//     <div >
-//       <Hero/>
-
-//     </div>
-//   )
-// }
-
-// export default Home11
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Title from '../Common/title/Title';
+import './HomeCss.css';
 
 const Home11 = () => {
   return (
     <>
-      {/* <section className='hero bg-cover w-full h-max bg-fixed' style={{ backgroundImage: `url('../../../../public/images/bg.webp')` }}> */}
-      {/* <div className='mx-auto px-4'>
-          <div className='row'>
+      <section className='mainhero bg-cover w-full h-max bg-fixed' >
+      <div className='hero-container mx-auto px-4'>
+          <div className='left-pannel row1'>
             <Title subtitle='WELCOME TO SKILL ACADAMY' title='BEST ONLINE LEARNING COURSE' />
             <p className='text-white'>
-              My name is Dhruv. I am from Surat. I study in DDU. I am working on an SDP project right now and try to avoid it.
+              {/* My name is Dhruv. I am from Surat. I study in DDU. I am working on an SDP project right now and try to avoid it. */}
+
+              <div class="container11">
+                  <div class="left-panel">
+                    <div class="animated-text">
+                      Want To Learn  &nbsp;<span></span>
+                    </div>
+                  </div>
+              </div>
+
+           
             </p>
-            <div className='button mt-4'>
+            <div className='btn-container button mt-4'>
               <button className='primary-btn'>
                 GET STARTED NOW <i className="fa-solid fa-arrow-right"></i>
               </button>
@@ -36,8 +35,15 @@ const Home11 = () => {
               </Link>
             </div>
           </div>
-        </div> */}
-      {/* </section> */}
+            <div className='rightpannel'>
+              <div className='rightpannelimg'>
+                <img src='../../../../public/images/rightImg2.jpg'></img>
+              </div>
+            </div>
+        </div>
+      </section>
+{/* 
+
       <section className="mb-40">
         <div className="bg-gradient-to-r from-sky-900 via-teal-700 to-sky-900 ">
           <div className="w-full mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
@@ -47,7 +53,7 @@ const Home11 = () => {
                   <h3>WELCOME TO SKILL ACADAMY</h3>
                   <h1>BEST ONLINE LEARNING COURSE</h1>
                 </div>
-                {/* <Title subtitle='WELCOME TO SKILL ACADAMY' title='BEST ONLINE LEARNING COURSE' /> */}
+     
                 <p className='text-white mb-6'>
                   My name is Dhruv. I am from Surat. I study in DDU. I am working on an SDP project right now and try to avoid it.
                 </p>
@@ -65,7 +71,7 @@ const Home11 = () => {
           </div>
         </div>
 
-      </section>
+      </section> */}
 
     </>
   );

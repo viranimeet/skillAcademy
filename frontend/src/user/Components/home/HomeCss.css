@@ -1,0 +1,148 @@
+.mainhero{
+    height: 100%;
+    width: 100%;
+}
+
+.hero-container{
+   
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-pannel{
+    width: 50%;
+    /* text-align: left; */
+}
+.rightpannel{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 3px solid red; */
+    padding: 20px;
+
+}
+
+.rightpannelimg
+{
+    height: 400px;
+   
+}
+.rightpannel img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.container11 {
+    margin: 0;
+    padding: 0;
+    /* background-color: #047481; */
+    /* background-image: linear-gradient(to right, #38b2ac, #047481, #38b2ac); */
+    color: #fff;
+    
+    
+    /* height: 50px; */
+    
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.left-panel {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.animated-text {
+    font-size: 38px;
+    font-weight: 600;
+    
+    height: 50px;
+    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #047481;
+    border-radius: 10px;
+    
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Java ?";
+    color: #ff7f50;
+    animation: words 20s infinite;
+    
+}
+
+.animated-text span::after {
+    
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 40px;
+    background-color: #047481;
+    
+    /* background-image: linear-gradient(to right, #38b2ac, #047481, #38b2ac); */
+
+    border-left: 2px solid #ff7f50;
+    right: 0px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Java ?";
+    }
+    21%, 40% {
+        content: "Python ?";
+    }
+    41%, 60% {
+        content: "C++ ?";
+    }
+    61%, 80% {
+        content: "C ?";
+    }
+    81%, 100% {
+        content: "React ?";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+
+.row1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
