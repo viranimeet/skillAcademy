@@ -10,7 +10,7 @@ const Home11 = () => {
       <section className='mainhero bg-cover w-full h-max bg-fixed' >
       <div className='hero-container mx-auto px-4'>
           <div className='left-pannel row1'>
-            <Title subtitle='WELCOME TO SKILL ACADAMY' title='BEST ONLINE LEARNING COURSE' />
+            <Title title='WELCOME TO SKILL ACADAMY' subtitle='"Explore Your Career Options with Us" - This version suggests that visitors can explore various career options on your platform. ' />
             <p className='text-white'>
               {/* My name is Dhruv. I am from Surat. I study in DDU. I am working on an SDP project right now and try to avoid it. */}
 

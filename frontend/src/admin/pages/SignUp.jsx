@@ -210,12 +210,16 @@
 // export default SignUp;
 
 import React, { useState } from 'react';
-import './LoginStyle.css';
+import './SignupCss.css';
+
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 import Head from '../../user/Components/Common/Heading/Head';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
+
 
 const SignUp = () => {
 
@@ -272,22 +276,22 @@ const SignUp = () => {
                     <div className="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12 text-white">
                         <form onSubmit={handleSubmit}>
                             <div className="flex flex-row items-center justify-center lg:justify-start">
-                                <p className="mb-0 mr-4 text-lg">Sign up with</p>
-                                <button
-                                    type="button"
-                                    data-te-ripple-init
-                                    data-te-ripple-color="light"
-                                    className="mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-sky-950 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                                <p className="mb-0 mr-4 text-lg">Sign up with : </p>
+                                
+                                <GoogleOAuthProvider clientId="288931065809-3cg540n2q6ketuphi1eradtr5fqf0ld4.apps.googleusercontent.com">
+                                    <GoogleLogin
+                                        onSuccess={credentialResponse => {
+                                            const details = jwt_decode(credentialResponse.credential);
+                                            console.log(details);
+                                            console.log(credentialResponse);
+                                        }}
+                                        onError={() => {
+                                            console.log('Login Failed');
+                                        }}
 
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="mx-auto h-3.5 w-3.5"
-                                        fill="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                                    </svg>
-                                </button>
+                                    />
+                                </GoogleOAuthProvider>
+                                
                             </div>
 
                             <div
@@ -298,7 +302,7 @@ const SignUp = () => {
                                 </p>
                             </div>
 
-                            <div className="relative mb-6" data-te-input-wrapper-init>
+                            <div className=" signup-email relative mb-6" data-te-input-wrapper-init>
                                 Email address
                                 <input
                                     type="text"
@@ -314,7 +318,7 @@ const SignUp = () => {
                                 </label>
                             </div>
 
-                            <div className="relative mb-6" data-te-input-wrapper-init>
+                            <div className="signup-name relative mb-6" data-te-input-wrapper-init>
                                 User Name
                                 <input
                                     type="text"
@@ -330,7 +334,7 @@ const SignUp = () => {
                                 </label>
                             </div>
 
-                            <div className="relative mb-6" data-te-input-wrapper-init>
+                            <div className="signup-pass relative mb-6" data-te-input-wrapper-init>
                                 Password
                                 <input
                                     type="password"
@@ -348,7 +352,7 @@ const SignUp = () => {
                                 </label>
                             </div>
 
-                            <div className="relative mb-6" data-te-input-wrapper-init>
+                            <div className="signup-con-pass relative mb-6" data-te-input-wrapper-init>
                                 Confirm Password
                                 <input
                                     type="password"

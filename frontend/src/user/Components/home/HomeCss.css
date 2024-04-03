@@ -146,3 +146,12 @@
     flex-direction: column;
    
 }
+
+#heading h1{
+    
+    color: #fff;
+}
+
+#heading h4{
+    color: #e0ecf1;
+}

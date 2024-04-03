@@ -242,3 +242,12 @@ body{
 .form_btn:hover{
     border:3px solid #1f1d1d;
 }
+
+/* --------------------------------------------- */
+.login-email input{
+        border: 3px solid white;
+}
+
+.login-pass input{
+    border: 3px solid white;
+}

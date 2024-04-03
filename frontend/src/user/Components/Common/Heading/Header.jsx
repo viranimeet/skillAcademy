@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <Head />
       <header className="bg-opacity-20 bg-white mx-8 relative">
-        <nav className="flex items-center justify-between py-5 px-8">
+        <nav className="flex items-center justify-between py-3 px-8">
           <ul className={`flex ${click ? "hidden" : ""} space-x-8`}>
             <li>
               <Link to="/home" className="text-white font-semibold hover:text-teal-500 transition duration-500">
