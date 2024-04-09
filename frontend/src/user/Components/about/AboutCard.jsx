@@ -2,6 +2,7 @@ import React from 'react';
 import { homeAbout } from '../../../dummydata';
 import Title from '../Common/title/Title';
 
+
 const AboutCard = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const AboutCard = () => {
             <div className="mx-auto xl:px-24">
               <div className="flex flex-col lg:flex-row items-center">
                 <div className="mb-8 md:mb-0 lg:mb-0 lg:w-1/2">
-                  <div className="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-4 py-8 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[15px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-8 lg:-mr-8">
+                 <div className=" about-left-card relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-4 py-8 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[15px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-8 lg:-mr-8 ">
                     <h2 className="mb-2 text-2xl lg:text-3xl font-bold text-primary text-white">
                       Skill Academy
                     </h2>

@@ -5,11 +5,13 @@ import YourCard from './YourCard';
 
 import './YourCourseCss.css';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const YourCourses = () => {
 
     const [courseDetails1, setCourseDetails1] = useState([]);
+    const nav=useNavigate();
     
     // const [courseFlag,setCourseFlage]=useState(true);
     // var x=[];
@@ -30,6 +32,9 @@ const YourCourses = () => {
 
     
   useEffect(()=>{
+
+    toast.info("Fetching course data...")
+   
 
     axios.get("http://localhost:8080/card/getCourseUrl")
     .then((res) => {
@@ -70,8 +75,9 @@ const YourCourses = () => {
     //   });
       
 
-    alert("sucesfull")
-    // console.log(x);
+    // --------------------------------------->>>>>> alert("sucesfull")
+    
+
 
 
 
@@ -83,7 +89,7 @@ const YourCourses = () => {
   
   },[])
 
-  const nav=useNavigate();
+
 
   
   const playVideo=(id)=>{

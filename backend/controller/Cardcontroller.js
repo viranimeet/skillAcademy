@@ -594,9 +594,8 @@ app.use(express.json());
 app.use(cors());
 
 
-
 export const addcourse = async (req, res) => {
-    const { coursename, coursediscription, mentorname, courseprice, couseimage, courseUrls } = req.body;
+    const { coursename, coursediscription, mentorname,courseusefor, courseprice, couseimage, courseUrls } = req.body;
     console.log("course url===" + courseUrls)
     console.log("request body===========", req.body);
 
@@ -605,6 +604,7 @@ export const addcourse = async (req, res) => {
         const data = new CardModel({
             coursename,
             coursediscription,
+            
             mentorname,
             courseprice,
             couseimage,

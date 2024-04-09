@@ -38,7 +38,7 @@ const Player = () => {
         {
 
 
-            alert("false")
+            // alert("false")
             console.log("iddd=",id)
 
             
